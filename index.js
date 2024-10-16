@@ -26,7 +26,7 @@ mongoose.connection.on("disconnected", () => {
 
 // Middleware
 app.use(cors({
-    origin: ['https://hotel-booking-full-stack-client.vercel.app', 'https://hotel-booking-full-stack-admin.vercel.app/login'],
+    origin: 'https://hotel-booking-full-stack-admin.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
 }));
